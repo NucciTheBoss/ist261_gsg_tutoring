@@ -18,11 +18,27 @@ public class Controller {
         return controller_instance;
     }
 
-    public void handleAdd(double num1, double num2, JLabel answerLabel) {}
+    public void handleAdd(double num1, double num2, JLabel answerLabel) {
+        CalculatorModel calc = new CalculatorModel(num1, num2);
+        answerLabel.setText(String.valueOf(calc.add()));
+        answerLabel.setVisible(true);
+    }
 
-    public void handleSubtract(double num1, double num2, JLabel answerLabel) {}
+    public void handleSubtract(double num1, double num2, JLabel answerLabel) {
+        CalculatorModel calc = new CalculatorModel(num1, num2);
+        answerLabel.setText(String.valueOf(calc.sub()));
+        answerLabel.setVisible(true);
+    }
 
-    public void handleMultiply(double num1, double num2, JLabel answerLabel) {}
+    public void handleMultiply(double num1, double num2, JLabel answerLabel) {
+        CalculatorModel calc = new CalculatorModel(num1, num2);
+        answerLabel.setText(String.valueOf(calc.mult()));
+        answerLabel.setVisible(true);
+    }
 
-    public void handleDivide(double num1, double num2, JLabel answerLabel) {}
+    public void handleDivide(double num1, double num2, JLabel answerLabel) {
+        CalculatorModel calc = new CalculatorModel(num1, num2);
+        answerLabel.setText(String.valueOf(calc.div()));
+        answerLabel.setVisible(true);
+    }
 }

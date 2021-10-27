@@ -13,4 +13,23 @@ public class CalculatorModel implements Arithmetic {
     }
 
     // Add interface methods
+    @Override
+    public double add() {
+        return this.num1 + this.num2;
+    }
+
+    @Override
+    public double sub() {
+        return this.num1 - this.num2;
+    }
+
+    @Override
+    public double mult() {
+        return this.num1 * this.num2;
+    }
+
+    @Override
+    public double div() {
+        return this.num1 / this.num2;
+    }
 }
