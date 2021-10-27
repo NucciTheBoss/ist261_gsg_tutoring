@@ -13,7 +13,7 @@ import java.util.Objects;
 public class RootView extends JFrame {
     public RootView() {
         // Initialize RootView
-        this.setTitle("Let's draw some shapes!");
+        this.setTitle("Let's create some shapes!");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(800, 250);
         this.setLocationRelativeTo(null);

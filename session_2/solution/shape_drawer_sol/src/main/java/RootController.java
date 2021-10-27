@@ -60,18 +60,18 @@ public class RootController {
     }
 
     public void handleUpdateButton(String selectedShape, String newColor, String newSize) {
-        for (Shape shape : shapeArrayList) {
-            if (shape.toString().equals(selectedShape)) {
-                shape.setColor(ComboBoxFactory.getColorMapping(newColor));
-                shape.setSize(Double.parseDouble(newSize));
+        for (int i = 0; i < shapeArrayList.size(); i++) {
+            if (shapeArrayList.get(i).toString().equals(selectedShape)) {
+                shapeArrayList.get(i).setColor(ComboBoxFactory.getColorMapping(newColor));
+                shapeArrayList.get(i).setSize(Double.parseDouble(newSize));
             }
         }
     }
 
     public void handleDeleteButton(String selectedShape) {
-        for (Shape shape : shapeArrayList) {
-            if (shape.toString().equals(selectedShape)) {
-                this.pop(shape);
+        for (int i = 0; i < shapeArrayList.size(); i++) {
+            if (shapeArrayList.get(i).toString().equals(selectedShape)) {
+                this.pop(shapeArrayList.get(i));
             }
         }
     }
