@@ -32,14 +32,6 @@ public class RootView extends JFrame {
         tabbedPane.setTabPlacement(JTabbedPane.RIGHT);
         this.add(tabbedPane, BorderLayout.CENTER);
 
-        // Add JMenuBar that contains Tool menu we can to display our shapes
-        JMenuBar menuBar = new JMenuBar();
-        JMenu tools = new JMenu("Tools");
-        JMenuItem showShapeList = new JMenuItem("Show Shape List");
-        tools.add(showShapeList);
-        menuBar.add(tools);
-        this.setJMenuBar(menuBar);
-
         // Add controls to Create panel
         JPanel createTitlePanel = new JPanel();
         JLabel createTitle = new JLabel("Create a new shape");
@@ -174,8 +166,6 @@ public class RootView extends JFrame {
             RootController.getInstance().updateShapeComboBox(updateShapeSelect);
             RootController.getInstance().updateShapeComboBox(deleteShapeSelect);
         });
-
-        // Add controls to Tools menu
 
         // Display RootView to user
         this.setVisible(true);
