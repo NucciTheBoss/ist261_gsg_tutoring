@@ -21,7 +21,6 @@ public class RootView extends JFrame {
         this.setLocationRelativeTo(null);
 
         // Load any current shapes in
-        RootController.getInstance().loadShapes();
 
         // Create JTabbedPane to switch between the Create, Update, and Delete panels
         JTabbedPane tabbedPane = new JTabbedPane();
